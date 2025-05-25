@@ -18,7 +18,6 @@ Thumbs.db
 
 # IDE和编辑器配置
 .idea/
-.vscode/
 *.suo
 *.ntvs*
 *.njsproj
