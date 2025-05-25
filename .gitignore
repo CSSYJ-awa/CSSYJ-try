@@ -1,0 +1,29 @@
+# 编译产物
+/bin/
+/obj/
+/build/
+/dist/
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+*.out
+
+# 环境配置
+.env
+.venv
+
+# IDE和编辑器配置
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 自定义忽略
+try/bin/
