@@ -26,3 +26,4 @@ Thumbs.db
 
 # 自定义忽略
 try/bin/
+try/build/

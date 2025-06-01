@@ -20,10 +20,11 @@ int main() {
             cout << num1 * num2;  // 乘法
             break;
         case '/': 
-            cout << num1 / num2;  // 除法（注意未处理除零错误）
+            if(num2) cout << num1 / num2;  // 除法
+            else cout<<"Divided by zero!"; // 除数为0处理
             break;
         default:  // 无效运算符处理
-            cout << "Invalid operator";
+            cout << "Invalid operator!";
             break;
     }
 }
