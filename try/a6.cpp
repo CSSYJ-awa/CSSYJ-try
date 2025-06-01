@@ -31,7 +31,7 @@ int f(char a, int x, int y, int g)
         if (!g)
             return x;
         else
-            n - y + 1;
+            return n - y + 1;
     case 'D':
         if (!g)
             return m - x + 1;
