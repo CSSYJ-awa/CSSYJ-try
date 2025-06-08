@@ -29,7 +29,16 @@
                 "${file}",
                 "-o",
                 "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
-                ""
+                "-ID:\\Program Files\\VulkanSDK\\Include",  // Vulkan头文件
+                "-ID:\\Program Files\\glfw-3.4.bin.WIN64\\include",  // GLFW头文件
+                "-LD:\\Program Files\\VulkanSDK\\Lib",    // Vulkan库文件
+                "-LD:\\Program Files\\glfw-3.4.bin.WIN64\\lib-mingw-w64",  // GLFW库文件
+                "-lvulkan-1",
+                "-lglfw3",
+                "-lgdi32",
+                "-std=c++17",  // 关键：启用C++17
+                "-Wall",       // 启用警告（可选）
+                "-Wextra"      // 启用额外警告（可选）
             ],
             "options": {
                 "cwd": "D:\\Program Files\\Dev-Cpp\\TDM-GCC-64\\bin"
